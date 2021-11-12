@@ -20,7 +20,7 @@ const state = (): TimelineState => ({})
 
 const getters: GetterTree<TimelineState, RootState> = {
   filters: (_state, _getters, rootState) => {
-    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Account) && !f.irreversible)
+    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Account))
   }
 }
 

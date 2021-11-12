@@ -138,7 +138,7 @@ const actions: ActionTree<TootDetailState, RootState> = {
 
 const getters: GetterTree<TootDetailState, RootState> = {
   filters: (_state, _getters, rootState) => {
-    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Thread) && !f.irreversible)
+    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Thread))
   }
 }
 

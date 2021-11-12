@@ -127,7 +127,7 @@ const actions: ActionTree<PublicState, RootState> = {
 
 const getters: GetterTree<PublicState, RootState> = {
   filters: (_state, _getters, rootState) => {
-    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Public) && !f.irreversible)
+    return rootState.TimelineSpace.filters.filter(f => f.context.includes(FilterContext.Public))
   }
 }
 
